@@ -13,6 +13,7 @@
     --nav-hover-link-color: #306BAC;
     --nav-hover-background-color: #5B5941;
 }
+
 body {
     font-family: var(--paragraph-font) ;
     max-width: 960px;
