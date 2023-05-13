@@ -75,7 +75,7 @@ main img {
 }
 
 aside h2 {
-    position: relative;
+    position: absolute;
     top: -5px;
     left: 0px;
 }
