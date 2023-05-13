@@ -13,3 +13,12 @@
     --nav-hover-link-color: #306BAC;
     --nav-hover-background-color: #5B5941;
 }
+div.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div {
+    position: absolute;
+    border: 3 px 
+}
