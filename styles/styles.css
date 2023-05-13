@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     Box-sizing: border-box;
 }
@@ -7,17 +7,25 @@
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem
+    font-weight: 700;
 }
 
 h1 {
     color: steelblue;
+    padding: 15px;
+    border-bottom: 1px solid steelblue;
 }
 
 img {
@@ -31,18 +39,21 @@ img {
 p {
     padding: 10px;
 }
+.grid {
+    display: grid;
+    align-items: center;
+}
 
 main {
-    max-width: 840px;
-    margin: 1em;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
-    margin:1em;
-    border:1px solid rgba(0,0,0,0.2);
-    padding: 1em;
-    color: #333;
-    text-align: center;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -50,12 +61,20 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 304px;
+}
+
 main img {
     width: 150px;
     height: auto;
 }
 
-p { padding: 0;}
+p { padding: 0;
+}
+
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
@@ -72,11 +91,17 @@ footer {
 }
 
 main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
-aside h2 {
-    position: absolute;
-    top: -5px;
-    left: 0px;
+
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
