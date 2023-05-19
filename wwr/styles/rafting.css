@@ -22,3 +22,33 @@ div {
     position: absolute;
     border: 3px 
 }
+nav {
+	text-align: right;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+.logo img {
+    margin: 0 0.25rem 0 0.5rem;
+    width: 64px;
+    height: 50px;
+}
