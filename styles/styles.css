@@ -47,6 +47,7 @@ main {
 }
 
 aside {
+    position: relative
     width: 20rem;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -62,8 +63,9 @@ aside img {
 }
 
 aside h2 {
-    top: 25px;
-    left: 50px;
+    position: absolute;
+    top: 475px;
+    left: 350px;
 }
 
 p { padding: 1rem;
