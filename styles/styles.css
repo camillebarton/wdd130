@@ -96,7 +96,7 @@ main img {
     margin: 10px 10px 1rem 1rem;
 }
 
-header, footer {
+header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
