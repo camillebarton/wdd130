@@ -36,7 +36,7 @@ header {
 
 .logo img {
     margin: 0 0.25rem 0 0.5rem;
-    width: 64px;
+    width: 14px;
     height: auto;
 }
 
@@ -47,6 +47,7 @@ h1{
 
 nav {
 	text-align: right;
+
 }
 
 .navigation {
