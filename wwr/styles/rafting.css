@@ -14,30 +14,87 @@
     --nav-hover-background-color: #5B5941;
 }
 
-div.hero img {
+body {
+    max-width: 1600px;
+    background-color: var(--secondary-color)
+}
+.hero {
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background-color: var(--nav-hover-background-color);
+    padding: 1rem;
+    opacity: 0.7;
+}
+
+.hero article{
+    position: absolute;
+    top: 8rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 1rem;
+    max-width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-div {
-    position: absolute;
-    border: 3px 
+.hero article img{
+    width: 200px;
+    float: left;
 }
+
 
 header {
-    margin: 1rem auto;
     display: grid;
-    grid-template-columns: 120px 1fr 2fr;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
+    grid-template-columns: 150px auto;
+    grid-gap: 2rem;
+    background-color: #fff;
 }
 
-.logo img {
-    margin: 0 0.25rem 0 0.5rem;
-    width: 14px;
-    height: auto;
+header img {
+    width: 150px;
+    border-radius: 20;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    background-color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+}
+
+article{
+    text-align: center;
+}
+
+article img{
+    width: 200px;
+    float: right;
 }
 
 h1{
@@ -45,48 +102,25 @@ h1{
     font-family:'Courier New', Courier, monospace
 }
 
-nav {
-	text-align: right;
-
-}
-
-.navigation {
-	display: flex;
-	list-style: none;
-}
-
-.navigation li {
-	flex: 1 1 100%;
-}
-
-.navigation a {
-	display: block;
-	color: navy;
-	padding: 20px;
-	text-decoration: none;
-}
-
-.navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
-}
-
 h2 {
     color:#BB7E50;
     text-align: center;
 }
 
-p {
-    text-align: center;
-}
-
-.sociallinks img {
-    width: 50px;
-    height: auto;
-}
-
 footer {
+    display:grid;
+    grid-template-columns: auto 160px;
+    background-color: var(--secondary-color);
+    color:#fff;
+    padding: 2rem;
+    align-items: center;
     text-align: center;
-    color:dimgray;
+}
+
+footer div{
+    text-align: right;
+}
+
+footer img {
+    width: 50px;
 }

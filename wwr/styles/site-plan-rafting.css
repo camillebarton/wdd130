@@ -12,7 +12,7 @@
     --nav-background-color: #DBB68F;
     --nav-link-color: #141B41;
     --nav-hover-link-color: #306BAC;
-    --nav-hover-background-color: #5B5941;
+    --nav-hover-background-color: #fff;
 }
 
 body {
@@ -32,7 +32,7 @@ p {
     padding: 25px;
 }
 nav {
-    background-color: var(--nav-backgorund-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
@@ -49,5 +49,8 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-
+section {
+    background-color: var(--primary-color);
+    color: #fff;
+}
 
