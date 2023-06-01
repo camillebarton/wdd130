@@ -182,3 +182,73 @@ footer div{
 footer img {
     width: 50px;
 }
+
+.staff {
+margin-top: 20px;
+}
+
+.staff img{
+    width: 225px;
+}
+
+.contact {
+    color: #fff;
+}
+
+form {
+    width: 650px;
+    margin: 25px auto;
+    padding: 1rem;
+    border: 1px solid var(--nav-link-color);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--nav-link-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--nav-link-color);
+    font-size: 1.3em;
+    text-align: center;
+}
+
+label, input, button, select, textarea {
+    font-famiy: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    margin-top: 3px;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
