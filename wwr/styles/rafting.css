@@ -91,7 +91,7 @@ header img {
 
 
 .history img {
-    width: 200px;
+    width: 100px;
     border-radius: 20px;
 }
 
@@ -191,6 +191,10 @@ margin-top: 20px;
     width: 225px;
 }
 
+.staff h2 {
+    background-color: var(--nav-hover-link-color)
+}
+
 .contact {
     color: #fff;
 }
@@ -232,10 +236,6 @@ legend {
     color: var(--nav-link-color);
     font-size: 1.3em;
     text-align: center;
-}
-
-label, input, button, select, textarea {
-    font-famiy: Roboto, Arial, sans-serif;
 }
 
 label {
