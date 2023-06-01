@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Vidaloka&display=swap');
 :root {
     --primary-color: #141b41;
-    --secondary-color: #306BAC;
-    --accent1-color: #BB7E50;
-    --accent2-color: #5B5941;
+    --secondary-color: #295e96;
+    --accent1-color: #bb7e50ef;
+    --accent2-color: #615e3f;
 
     --heading-font: 'Vidaloka', serif;
     --paragraph-font: 'Roboto', serif;
 
     --nav-background-color: #DBB68F;
     --nav-link-color: #141B41;
-    --nav-hover-link-color: #306BAC;
-    --nav-hover-background-color: #5B5941;
+    --nav-hover-link-color: #295e96;
+    --nav-hover-background-color: #615e3f;
 }
 
 body {
     max-width: 1600px;
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    text-align: center;
 }
+
 .hero {
     position: relative;
 }
@@ -31,20 +33,20 @@ body {
     color: #fff;
     background-color: var(--nav-hover-background-color);
     padding: 1rem;
-    opacity: 0.7;
+    opacity: 0.82;
 }
 
 .hero article{
     position: absolute;
     top: 8rem;
-    background-color: var(--accent1-color);
+    background-color: var(--nav-hover-background-color);
     color: #fff;
     padding: 1rem;
     max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0.8;
+    opacity: 0.78;
 }
 
 .hero img {
@@ -55,7 +57,8 @@ body {
 
 .hero article img{
     width: 200px;
-    float: left;
+    float: right;
+    padding: 1px;
 }
 
 
@@ -69,6 +72,49 @@ header {
 header img {
     width: 150px;
     border-radius: 20;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.content p, .content img {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.history img {
+    width: 250px;
+    border-radius: 20;
+}
+
+figure {
+    display: inline-block;
+    width: 18%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    color: lightgrey;
+    padding: 1px;
+}
+
+.adventure {
+    background-color: var(--nav-hover-background-color);
+    padding: 1px;
+}
+
+.adventure img {
+    width: 155px;
 }
 
 nav {
@@ -88,6 +134,11 @@ nav a{
     color: var(--primary-color);
 }
 
+nav a:hover{
+    color: #fff;
+    background-color: var(--nav-hover-link-color);
+}
+
 article{
     text-align: center;
 }
@@ -103,8 +154,15 @@ h1{
 }
 
 h2 {
-    color:#BB7E50;
+    color: #fff;
     text-align: center;
+    background-color: var(--nav-hover-background-color);
+    margin-top: 10px;
+}
+
+.history h2 {
+    background-color: var(--nav-hover-link-color);
+    color:#141B41;
 }
 
 footer {
